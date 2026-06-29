@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery Budget Planner — Free Tool | MyFitWealthJourney</title>
+  <meta name="description" content="Free grocery budget planner. Enter your weekly budget and household size to get a smart category breakdown for your shopping trip. No login required.">
+  <link rel="canonical" href="https://myfitwealthjourney.com/tools/grocery-budget-planner.html">
+  <meta property="og:title" content="Free Grocery Budget Planner — MyFitWealthJourney">
+  <meta property="og:description" content="Enter your weekly budget to get a smart grocery category breakdown. Free, no account needed.">
+  <meta property="og:image" content="https://myfitwealthjourney.com/assets/images/og-tools.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://myfitwealthjourney.com/tools/grocery-budget-planner.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Grocery Budget Planner","description":"Free grocery budget calculator. Enter your weekly budget and household size to get a category-by-category spending breakdown.","applicationCategory":"UtilityApplication","operatingSystem":"Web Browser","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"url":"https://myfitwealthjourney.com/tools/grocery-budget-planner.html","publisher":{"@type":"Organization","name":"MyFitWealthJourney"}}</script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8978658918402683" crossorigin="anonymous"></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<div class="pub-topbar"><div class="container"><div class="pub-topbar-inner"><div class="pub-topbar-cats"><a href="../healthy-living.html">Healthy Living</a><a href="../recipes.html">Recipes</a><a href="../meal-prep.html">Meal Prep</a><a href="../budget-grocery.html">Budget Grocery</a><a href="../tools.html">Free Tools</a></div><span class="pub-topbar-date">Mind · Body · Money</span></div></div></div>
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="../index.html" class="navbar-brand">
+        <svg class="brand-logo-svg" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="36" height="36" rx="8" fill="#2D6A4F"/><path d="M18 7C13.5 7 9.5 11 9.5 15.5C9.5 20 13 23 18 29C23 23 26.5 20 26.5 15.5C26.5 11 22.5 7 18 7Z" fill="#52B788"/><path d="M18 12V29" stroke="white" stroke-width="2.2" stroke-linecap="round"/><path d="M18 18L14 14" stroke="white" stroke-width="1.8" stroke-linecap="round"/><path d="M18 21L22 17" stroke="white" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <div class="brand-text"><span class="brand-name-pub">MyFit<em>Wealth</em>Journey</span><span class="brand-sub-pub">Healthy living · Real budgets</span></div>
+      </a>
+      <div class="navbar-links pub-nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../healthy-living.html">Healthy Living</a>
+        <a href="../recipes.html">Recipes</a>
+        <a href="../meal-prep.html">Meal Prep</a>
+        <a href="../budget-grocery.html">Budget Grocery</a>
+        <a href="../tools.html" class="active">Free Tools</a>
+      </div>
+      <div class="navbar-cta"><a href="../tools.html" class="btn btn-primary btn-sm">Free Tools</a></div>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu">
+    <a href="../index.html">Home</a><a href="../healthy-living.html">Healthy Living</a><a href="../recipes.html">Recipes</a>
+    <a href="../meal-prep.html">Meal Prep</a><a href="../budget-grocery.html">Budget Grocery</a>
+    <a href="../tools.html">Free Tools</a><a href="../about.html">About</a>
+  </div>
+</nav>
+
+<section id="main-content" class="section">
+  <div class="container" style="max-width:760px">
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a>
+      <span aria-hidden="true">›</span>
+      <a href="../tools.html">Free Tools</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">Grocery Budget Planner</span>
+    </nav>
+
+    <div class="calculator-wrap">
+      <div class="calc-header">
+        <div style="font-size:2.5rem;margin-bottom:var(--space-3)" aria-hidden="true">🛒</div>
+        <h1>Grocery Budget Planner</h1>
+        <p>Enter your weekly grocery budget and household details to get a practical category-by-category spending breakdown for your next shopping trip.</p>
+      </div>
+
+      <div class="calc-body">
+        <form id="groceryBudgetForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="weeklyBudget">Weekly Grocery Budget ($) <span aria-hidden="true">*</span></label>
+              <input type="number" id="weeklyBudget" class="form-control" placeholder="e.g. 100" min="10" max="2000" step="5" required aria-describedby="budgetHint">
+              <p class="hint" id="budgetHint">Your total planned spend for the week</p>
+            </div>
+            <div class="form-group">
+              <label for="householdSize">Household Size (people) <span aria-hidden="true">*</span></label>
+              <input type="number" id="householdSize" class="form-control" placeholder="e.g. 2" min="1" max="12" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="mealsPerWeek">Meals at Home Per Week</label>
+              <input type="number" id="mealsPerWeek" class="form-control" placeholder="e.g. 14" min="1" max="35" value="14">
+              <p class="hint">Breakfast + lunch + dinner combined</p>
+            </div>
+            <div class="form-group">
+              <label for="dietPreference">Diet Preference</label>
+              <select id="dietPreference" class="form-control">
+                <option value="balanced">Balanced (all food groups)</option>
+                <option value="high-protein">Higher protein focus</option>
+                <option value="plant-based">Plant-based / vegetarian</option>
+                <option value="budget-max">Maximum budget stretch</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="calc-actions">
+            <button type="submit" class="btn btn-primary">Calculate My Budget →</button>
+            <button type="button" id="groceryBudgetReset" class="btn btn-ghost">Reset</button>
+          </div>
+        </form>
+
+        <!-- RESULT -->
+        <div id="groceryBudgetResult" class="result-card" aria-live="polite">
+          <div class="result-card-title">📊 Your Weekly Grocery Plan</div>
+
+          <div class="result-grid">
+            <div class="result-metric">
+              <span class="result-metric-value" id="result_perPerson">—</span>
+              <span class="result-metric-label">Per Person / Week</span>
+            </div>
+            <div class="result-metric">
+              <span class="result-metric-value" id="result_perMeal">—</span>
+              <span class="result-metric-label">Est. Cost Per Meal</span>
+            </div>
+            <div class="result-metric">
+              <span class="result-metric-value" id="result_totalMeals">—</span>
+              <span class="result-metric-label">Meals Planned</span>
+            </div>
+          </div>
+
+          <div class="result-breakdown">
+            <h4>Category Allocation</h4>
+            <div id="budgetBreakdown"></div>
+          </div>
+
+          <div class="result-tips">
+            <h4>Practical Tips for This Budget</h4>
+            <ul id="budgetTips"></ul>
+          </div>
+        </div>
+
+        <div class="edu-note" role="note">
+          <span class="edu-icon" aria-hidden="true">💡</span>
+          <span><strong>How to use this plan:</strong> These allocations are starting estimates, not hard rules. Adjust the categories based on what your family actually eats. The goal is to walk into the store with a plan so you spend more intentionally and waste less.</span>
+        </div>
+
+        <div class="disclaimer-box" role="note">
+          <strong>Disclaimer</strong>
+          Results are general estimates for planning purposes based on typical U.S. grocery pricing. Actual costs vary by location, store, season, and brand. This tool does not constitute professional dietary or financial advice. Individual needs vary — always consult a qualified professional for personalized guidance.
+        </div>
+      </div>
+    </div>
+
+    <div class="ad-slot ad-slot-content" aria-label="Advertisement">
+      <!-- Myfitwealthjourney -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-8978658918402683"
+           data-ad-slot="5652001676"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <!-- RELATED TOOLS -->
+    <div style="margin-top:var(--space-10)">
+      <h2 class="mb-6">Related Tools</h2>
+      <div class="grid-2">
+        <div class="tool-card">
+          <div class="tool-icon" aria-hidden="true">🍽️</div>
+          <div>
+            <h3>Meal Cost Calculator</h3>
+            <p>Find out the exact cost per serving of any homemade meal by adding your ingredients and prices.</p>
+          </div>
+          <a href="meal-cost-calculator.html" class="btn btn-outline btn-sm">Open Calculator →</a>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon" aria-hidden="true">💪</div>
+          <div>
+            <h3>Protein Cost Calculator</h3>
+            <p>Compare protein sources by cost per gram to find the best value for your budget.</p>
+          </div>
+          <a href="protein-cost-calculator.html" class="btn btn-outline btn-sm">Open Calculator →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ad-slot ad-slot-content" aria-label="Advertisement">
+      <!-- Myfitwealthjourney -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-8978658918402683"
+           data-ad-slot="5652001676"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <!-- RELATED ARTICLES -->
+    <div style="margin-top:var(--space-8)">
+      <h2 class="mb-6">Related Reading</h2>
+      <div class="grid-2">
+        <a href="../blog/grocery-savings-for-beginners.html" class="card" style="text-decoration:none">
+          <div class="card-body">
+            <span class="card-tag">Grocery Tips</span>
+            <h3 class="card-title">Grocery Savings for Beginners</h3>
+            <p class="card-excerpt">10 simple habits that save $50–$100/month without feeling deprived.</p>
+          </div>
+        </a>
+        <a href="../blog/meal-prep-on-a-budget.html" class="card" style="text-decoration:none">
+          <div class="card-body">
+            <span class="card-tag">Meal Prep</span>
+            <h3 class="card-title">Meal Prep on a Budget</h3>
+            <p class="card-excerpt">A beginner's guide to Sunday meal prep that saves time and money.</p>
+          </div>
+        </a>
+        <a href="../blog/affordable-healthy-eating.html" class="card" style="text-decoration:none">
+          <div class="card-body">
+            <span class="card-tag">Nutrition Basics</span>
+            <h3 class="card-title">How to Eat Healthy on a Budget</h3>
+            <p class="card-excerpt">The complete guide — affordable proteins, produce tips, and a real $75 weekly meal framework.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="navbar-brand" style="margin-bottom:var(--space-4);display:inline-flex">
+          <svg class="brand-logo-svg" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="36" height="36" rx="8" fill="#52B788"/><path d="M18 7C13.5 7 9.5 11 9.5 15.5C9.5 20 13 23 18 29C23 23 26.5 20 26.5 15.5C26.5 11 22.5 7 18 7Z" fill="#D8F3DC"/><path d="M18 12V29" stroke="white" stroke-width="2.2" stroke-linecap="round"/><path d="M18 18L14 14" stroke="white" stroke-width="1.8" stroke-linecap="round"/><path d="M18 21L22 17" stroke="white" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <div class="brand-text"><span class="brand-name">MyFitWealthJourney</span><span class="brand-sub">Mind · Body · Money</span></div>
+        </a>
+        <p>Practical wellness tools, budget recipes, and simple habit guides.</p>
+      </div>
+      <nav class="footer-col"><h4>Tools</h4><ul>
+        <li><a href="grocery-budget-planner.html">Budget Planner</a></li>
+        <li><a href="meal-cost-calculator.html">Meal Cost Calculator</a></li>
+        <li><a href="protein-cost-calculator.html">Protein Cost Calculator</a></li>
+      </ul></nav>
+      <nav class="footer-col"><h4>Recipes</h4><ul>
+        <li><a href="../recipes/budget-chicken-rice-bowl.html">Chicken Rice Bowl</a></li>
+        <li><a href="../recipes/egg-fried-rice.html">Egg Fried Rice</a></li>
+        <li><a href="../recipes/bean-and-rice-bowl.html">Bean & Rice Bowl</a></li>
+      </ul></nav>
+      <nav class="footer-col"><h4>Info</h4><ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../disclaimer.html">Disclaimer</a></li>
+        <li><a href="../privacy.html">Privacy</a></li>
+      </ul></nav>
+    </div>
+    <div class="footer-disclaimer">
+      <strong>General Wellness Disclaimer:</strong> Content is for informational purposes only, not medical or financial advice. Individual needs vary. Consult a qualified professional for personal guidance.
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 MyFitWealthJourney.com</p>
+      <div style="display:flex;gap:var(--space-4)"><a href="../privacy.html">Privacy</a><a href="../disclaimer.html">Disclaimer</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/calculators.js"></script>
+</body>
+</html>
+

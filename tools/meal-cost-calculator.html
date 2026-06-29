@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meal Cost Calculator — Free Tool | MyFitWealthJourney</title>
+  <meta name="description" content="Free meal cost calculator. Add your ingredients and prices to find out exactly what a homemade meal costs per serving — and how much you save vs. eating out.">
+  <link rel="canonical" href="https://myfitwealthjourney.com/tools/meal-cost-calculator.html">
+  <meta property="og:title" content="Free Meal Cost Calculator — MyFitWealthJourney">
+  <meta property="og:description" content="Find out what any homemade meal costs per serving. Add your ingredients and prices — results in seconds.">
+  <meta property="og:image" content="https://myfitwealthjourney.com/assets/images/og-tools.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://myfitwealthjourney.com/tools/meal-cost-calculator.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Meal Cost Calculator","description":"Free meal cost calculator. Add your ingredients and prices to find out the exact cost per serving of any homemade meal.","applicationCategory":"UtilityApplication","operatingSystem":"Web Browser","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"url":"https://myfitwealthjourney.com/tools/meal-cost-calculator.html","publisher":{"@type":"Organization","name":"MyFitWealthJourney"}}</script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8978658918402683" crossorigin="anonymous"></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<div class="pub-topbar"><div class="container"><div class="pub-topbar-inner"><div class="pub-topbar-cats"><a href="../healthy-living.html">Healthy Living</a><a href="../recipes.html">Recipes</a><a href="../meal-prep.html">Meal Prep</a><a href="../budget-grocery.html">Budget Grocery</a><a href="../tools.html">Free Tools</a></div><span class="pub-topbar-date">Mind · Body · Money</span></div></div></div>
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="../index.html" class="navbar-brand">
+        <svg class="brand-logo-svg" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="36" height="36" rx="8" fill="#2D6A4F"/><path d="M18 7C13.5 7 9.5 11 9.5 15.5C9.5 20 13 23 18 29C23 23 26.5 20 26.5 15.5C26.5 11 22.5 7 18 7Z" fill="#52B788"/><path d="M18 12V29" stroke="white" stroke-width="2.2" stroke-linecap="round"/><path d="M18 18L14 14" stroke="white" stroke-width="1.8" stroke-linecap="round"/><path d="M18 21L22 17" stroke="white" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <div class="brand-text"><span class="brand-name-pub">MyFit<em>Wealth</em>Journey</span><span class="brand-sub-pub">Healthy living · Real budgets</span></div>
+      </a>
+      <div class="navbar-links pub-nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../healthy-living.html">Healthy Living</a>
+        <a href="../recipes.html">Recipes</a>
+        <a href="../meal-prep.html">Meal Prep</a>
+        <a href="../budget-grocery.html">Budget Grocery</a>
+        <a href="../tools.html" class="active">Free Tools</a>
+      </div>
+      <div class="navbar-cta"><a href="../tools.html" class="btn btn-primary btn-sm">Free Tools</a></div>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu">
+    <a href="../index.html">Home</a><a href="../healthy-living.html">Healthy Living</a><a href="../recipes.html">Recipes</a>
+    <a href="../meal-prep.html">Meal Prep</a><a href="../budget-grocery.html">Budget Grocery</a>
+    <a href="../tools.html">Free Tools</a><a href="../about.html">About</a>
+  </div>
+</nav>
+
+<section id="main-content" class="section">
+  <div class="container" style="max-width:760px">
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a><span>›</span>
+      <a href="../tools.html">Free Tools</a><span>›</span>
+      <span aria-current="page">Meal Cost Calculator</span>
+    </nav>
+
+    <div class="calculator-wrap">
+      <div class="calc-header">
+        <div style="font-size:2.5rem;margin-bottom:var(--space-3)" aria-hidden="true">🍽️</div>
+        <h1>Meal Cost Calculator</h1>
+        <p>Add your ingredients and prices. Find out exactly what your homemade meal costs per serving — and how that compares to eating out.</p>
+      </div>
+
+      <div class="calc-body">
+        <form id="mealCostForm" novalidate>
+
+          <div style="margin-bottom:var(--space-4)">
+            <label style="display:block;font-size:var(--font-size-sm);font-weight:600;margin-bottom:var(--space-3)">
+              Ingredients <span style="color:var(--color-text-muted);font-weight:400">(add one per row)</span>
+            </label>
+            <div style="display:grid;grid-template-columns:1fr 90px 80px auto;gap:var(--space-2);font-size:var(--font-size-xs);font-weight:600;color:var(--color-text-muted);padding:0 var(--space-3);margin-bottom:var(--space-2)">
+              <span>Ingredient</span><span>Package cost</span><span>Servings pkg makes</span><span></span>
+            </div>
+            <div class="ingredient-rows" id="ingredientRows">
+              <div class="ingredient-row">
+                <input type="text" placeholder="e.g. Chicken thighs" class="ing-name" aria-label="Ingredient name">
+                <input type="number" placeholder="$3.99" step="0.01" min="0" class="ing-cost" style="width:90px" aria-label="Package cost">
+                <input type="number" placeholder="4" step="0.5" min="0.5" class="ing-servings" style="width:80px" aria-label="Servings this package makes">
+                <button type="button" class="remove-row" aria-label="Remove row" title="Remove">✕</button>
+              </div>
+            </div>
+            <button type="button" id="addIngredient" class="btn btn-ghost btn-sm" style="margin-top:var(--space-3)">+ Add Ingredient</button>
+          </div>
+
+          <hr class="divider">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="totalServings">This Recipe Makes (servings) <span aria-hidden="true">*</span></label>
+              <input type="number" id="totalServings" class="form-control" placeholder="e.g. 4" min="0.5" step="0.5" required>
+              <p class="hint">How many people does this meal feed?</p>
+            </div>
+            <div class="form-group">
+              <label for="eatOutCost">Comparable Eat-Out Cost Per Person ($)</label>
+              <input type="number" id="eatOutCost" class="form-control" placeholder="15.00" step="0.50" min="1" value="15">
+              <p class="hint">What would this cost at a restaurant?</p>
+            </div>
+          </div>
+
+          <div class="calc-actions">
+            <button type="submit" class="btn btn-primary">Calculate Meal Cost →</button>
+            <button type="button" id="mealCostReset" class="btn btn-ghost">Reset</button>
+          </div>
+        </form>
+
+        <!-- RESULT -->
+        <div id="mealCostResult" class="result-card" aria-live="polite">
+          <div class="result-card-title">💰 Your Meal Cost Breakdown</div>
+
+          <div class="result-grid">
+            <div class="result-metric">
+              <span class="result-metric-value" id="result_mealTotal">—</span>
+              <span class="result-metric-label">Total Meal Cost</span>
+            </div>
+            <div class="result-metric">
+              <span class="result-metric-value" id="result_costPerServing">—</span>
+              <span class="result-metric-label">Cost Per Serving</span>
+            </div>
+            <div class="result-metric">
+              <span class="result-metric-value" id="result_savings">—</span>
+              <span class="result-metric-label">Savings vs. Eating Out</span>
+            </div>
+          </div>
+
+          <p id="result_savingsLabel" style="font-size:var(--font-size-sm);color:var(--color-primary-dark);font-weight:600;margin-bottom:var(--space-4)"></p>
+
+          <div class="result-breakdown">
+            <h4>Ingredient Cost Breakdown</h4>
+            <div id="mealIngBreakdown"></div>
+          </div>
+        </div>
+
+        <div class="edu-note" role="note">
+          <span class="edu-icon" aria-hidden="true">💡</span>
+          <span><strong>Tip:</strong> Enter the full package cost and the number of servings that package makes. The calculator will pro-rate the cost to just the portion you're using in this recipe. For example: a $4 bag of rice that makes 8 servings contributes $0.50/serving to your meal.</span>
+        </div>
+
+        <div class="disclaimer-box" role="note">
+          <strong>Disclaimer</strong>
+          Cost estimates are approximations based on your inputs. Actual costs vary by location, store, brand, and portioning. This tool is for general planning and education only, not professional dietary or financial advice.
+        </div>
+      </div>
+    </div>
+
+    <div class="ad-slot ad-slot-content" aria-label="Advertisement">
+      <!-- Myfitwealthjourney -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-8978658918402683"
+           data-ad-slot="5652001676"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <div style="margin-top:var(--space-10)">
+      <h2 class="mb-6">Try These Budget Recipes</h2>
+      <div class="grid-3">
+        <a href="../recipes/budget-chicken-rice-bowl.html" class="card" style="text-decoration:none">
+          <div class="card-img" style="font-size:2.5rem" aria-hidden="true">🍗</div>
+          <div class="card-body">
+            <span class="card-tag">~$1.80/serving</span>
+            <h3 class="card-title">Chicken Rice Bowl</h3>
+          </div>
+        </a>
+        <a href="../recipes/egg-fried-rice.html" class="card" style="text-decoration:none">
+          <div class="card-img" style="font-size:2.5rem" aria-hidden="true">🍳</div>
+          <div class="card-body">
+            <span class="card-tag">~$1.20/serving</span>
+            <h3 class="card-title">Egg Fried Rice</h3>
+          </div>
+        </a>
+        <a href="../recipes/bean-and-rice-bowl.html" class="card" style="text-decoration:none">
+          <div class="card-img" style="font-size:2.5rem" aria-hidden="true">🫘</div>
+          <div class="card-body">
+            <span class="card-tag">~$1.10/serving</span>
+            <h3 class="card-title">Bean & Rice Bowl</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="ad-slot ad-slot-content" aria-label="Advertisement">
+      <!-- Myfitwealthjourney -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-8978658918402683"
+           data-ad-slot="5652001676"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="navbar-brand" style="margin-bottom:var(--space-4);display:inline-flex">
+          <svg class="brand-logo-svg" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="36" height="36" rx="8" fill="#52B788"/><path d="M18 7C13.5 7 9.5 11 9.5 15.5C9.5 20 13 23 18 29C23 23 26.5 20 26.5 15.5C26.5 11 22.5 7 18 7Z" fill="#D8F3DC"/><path d="M18 12V29" stroke="white" stroke-width="2.2" stroke-linecap="round"/><path d="M18 18L14 14" stroke="white" stroke-width="1.8" stroke-linecap="round"/><path d="M18 21L22 17" stroke="white" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <div class="brand-text"><span class="brand-name">MyFitWealthJourney</span><span class="brand-sub">Mind · Body · Money</span></div>
+        </a>
+        <p>Practical wellness tools, budget recipes, and simple habit guides.</p>
+      </div>
+      <nav class="footer-col"><h4>Tools</h4><ul>
+        <li><a href="grocery-budget-planner.html">Budget Planner</a></li>
+        <li><a href="meal-cost-calculator.html">Meal Cost Calculator</a></li>
+        <li><a href="protein-cost-calculator.html">Protein Cost Calculator</a></li>
+      </ul></nav>
+      <nav class="footer-col"><h4>Recipes</h4><ul>
+        <li><a href="../recipes/budget-chicken-rice-bowl.html">Chicken Rice Bowl</a></li>
+        <li><a href="../recipes/egg-fried-rice.html">Egg Fried Rice</a></li>
+        <li><a href="../recipes/bean-and-rice-bowl.html">Bean & Rice Bowl</a></li>
+      </ul></nav>
+      <nav class="footer-col"><h4>Info</h4><ul>
+        <li><a href="../about.html">About</a></li><li><a href="../disclaimer.html">Disclaimer</a></li><li><a href="../privacy.html">Privacy</a></li>
+      </ul></nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 MyFitWealthJourney.com</p>
+      <div style="display:flex;gap:var(--space-4)"><a href="../privacy.html">Privacy</a><a href="../disclaimer.html">Disclaimer</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/calculators.js"></script>
+</body>
+</html>
