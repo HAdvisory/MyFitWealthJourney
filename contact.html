@@ -8,12 +8,17 @@
   <link rel="canonical" href="https://myfitwealthjourney.com/contact.html">
   <meta property="og:title" content="Contact — MyFitWealthJourney">
   <meta property="og:description" content="Get in touch with questions, recipe ideas, or feedback.">
-  <meta property="og:image" content="https://myfitwealthjourney.com/assets/images/og-home.jpg">
+  <meta property="og:image" content="https://myfitwealthjourney.com/assets/images/og-default.svg">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://myfitwealthjourney.com/contact.html">
   <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"ContactPage","name":"Contact MyFitWealthJourney","url":"https://myfitwealthjourney.com/contact.html"}</script>
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script src="https://analytics.ahrefs.com/analytics.js" data-key="l/1bzRydsAMAGI6qdq7bkA" async></script>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -60,47 +65,25 @@
       We cannot answer personal medical, dietary, or health questions. For medical or nutritional concerns, please consult a qualified healthcare professional.
     </div>
 
-    <div class="calculator-wrap">
-      <div class="calc-header">
-        <h2 style="font-size:var(--font-size-xl);color:white;margin-bottom:var(--space-2)">Send a Message</h2>
-        <p style="color:rgba(255,255,255,.8);margin:0">We typically respond within 2–3 business days.</p>
-      </div>
-      <div class="calc-body">
-        <form id="contactForm" novalidate>
-          <div class="form-group">
-            <label for="contactName">Your Name <span aria-hidden="true">*</span></label>
-            <input type="text" id="contactName" class="form-control" placeholder="Jane Smith" required autocomplete="name">
-          </div>
-          <div class="form-group">
-            <label for="contactEmail">Email Address <span aria-hidden="true">*</span></label>
-            <input type="email" id="contactEmail" class="form-control" placeholder="jane@example.com" required autocomplete="email">
-          </div>
-          <div class="form-group">
-            <label for="contactSubject">Topic</label>
-            <select id="contactSubject" class="form-control">
-              <option value="">Select a topic...</option>
-              <option>Recipe idea or suggestion</option>
-              <option>Tool feedback</option>
-              <option>Article topic request</option>
-              <option>General question</option>
-              <option>Partnership or collaboration</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="contactMessage">Message <span aria-hidden="true">*</span></label>
-            <textarea id="contactMessage" class="form-control" rows="5" placeholder="Tell us what's on your mind..." required style="resize:vertical"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary w-full">Send Message</button>
-        </form>
+    <div class="tip-box" style="margin-bottom:var(--space-6)">
+      <strong>How to reach us:</strong>
+      For general feedback, recipe suggestions, or site corrections, browse our content below — most common questions are already covered. For editorial concerns or corrections you'd like us to review, note the page URL and specific section, and check back as we respond to feedback in our published corrections. A direct contact form is planned for a future update.
+    </div>
 
-        <div id="contactSuccess" style="display:none;margin-top:var(--space-6)">
-          <div class="tip-box">
-            <strong>✅ Message sent!</strong>
-            Thanks for reaching out. We'll get back to you within 2–3 business days.
-          </div>
-        </div>
+    <h2 style="font-size:var(--font-size-xl);margin-bottom:var(--space-4)">What You Can Find on the Site</h2>
+    <ul style="margin-bottom:var(--space-8)">
+      <li style="margin-bottom:var(--space-3)"><strong>Budget recipes</strong> — five meals under $2 per serving with full instructions, nutrition estimates, and cost breakdowns. <a href="recipes.html">Browse recipes →</a></li>
+      <li style="margin-bottom:var(--space-3)"><strong>Wellness articles</strong> — practical guides on grocery savings, meal prep, nutrition basics, and healthy habits. <a href="healthy-living.html">Read articles →</a></li>
+      <li style="margin-bottom:var(--space-3)"><strong>Free tools</strong> — three interactive calculators for <a href="tools/grocery-budget-planner.html">grocery budgeting</a>, <a href="tools/meal-cost-calculator.html">meal cost</a>, and <a href="tools/protein-cost-calculator.html">protein value</a>. No account required.</li>
+      <li style="margin-bottom:var(--space-3)"><strong>Editorial approach</strong> — learn what we do (and don't) claim, and why. <a href="about.html">About page →</a></li>
+    </ul>
+
+    <div class="cta-banner">
+      <div>
+        <h3>Not sure where to start?</h3>
+        <p>Try the free Grocery Budget Planner — takes about 60 seconds and gives you a category breakdown for your next shopping trip.</p>
       </div>
+      <a href="tools/grocery-budget-planner.html" class="btn btn-primary">Open Budget Planner →</a>
     </div>
 
   </div>
@@ -152,13 +135,5 @@
 </footer>
 
 <script src="assets/js/main.js"></script>
-<script>
-  document.getElementById('contactForm')?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    // In production, connect to a form service (Formspree, Netlify Forms, etc.)
-    document.getElementById('contactForm').style.display = 'none';
-    document.getElementById('contactSuccess').style.display = 'block';
-  });
-</script>
 </body>
 </html>

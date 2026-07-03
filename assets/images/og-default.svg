@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#1B4332"/>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#grad)"/>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1B4332;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#2D6A4F;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <!-- Logo mark -->
+  <g transform="translate(540,200)">
+    <rect width="120" height="120" rx="24" fill="#2D6A4F"/>
+    <path d="M60 20C42 20 28 36 28 52C28 68 42 80 60 100C78 80 92 68 92 52C92 36 78 20 60 20Z" fill="#52B788"/>
+    <path d="M60 35V100" stroke="white" stroke-width="7" stroke-linecap="round"/>
+    <path d="M60 60L46 46" stroke="white" stroke-width="6" stroke-linecap="round"/>
+    <path d="M60 72L74 58" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <!-- Site name -->
+  <text x="600" y="370" font-family="Georgia, serif" font-size="52" font-weight="bold" fill="white" text-anchor="middle">MyFitWealthJourney</text>
+  <!-- Tagline -->
+  <text x="600" y="420" font-family="Arial, sans-serif" font-size="26" fill="#52B788" text-anchor="middle">Mind · Body · Money</text>
+  <!-- Subtagline -->
+  <text x="600" y="460" font-family="Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.65)" text-anchor="middle">Healthy living on a real budget</text>
+</svg>
