@@ -9,6 +9,22 @@ document.addEventListener('DOMContentLoaded', () => {
   initFAQ();
 });
 
+/* --- Escape key global handler ---
+   Closes any open overlay (mobile menu) when Escape is pressed. */
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    if (mobileMenu && mobileMenu.classList.contains('open')) {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+      hamburger.focus();
+    }
+  }
+});
+
 /* --- Navigation ---
    Toggles mobile menu open/closed.
    Closes when a link is clicked or user taps outside. */
@@ -17,16 +33,20 @@ function initNavigation() {
   const mobileMenu = document.querySelector('.mobile-menu');
   if (!hamburger || !mobileMenu) return;
 
+  // Wire ARIA relationship if not already in HTML
+  if (!mobileMenu.id) mobileMenu.id = 'mobile-menu';
+  hamburger.setAttribute('aria-controls', 'mobile-menu');
+
   hamburger.addEventListener('click', () => {
     const isOpen = mobileMenu.classList.toggle('open');
     hamburger.classList.toggle('open', isOpen);
-    hamburger.setAttribute('aria-expanded', isOpen);
+    hamburger.setAttribute('aria-expanded', String(isOpen));
     document.body.style.overflow = isOpen ? 'hidden' : '';
   });
 
-  // Close on link click
+  // Close on link click — return focus to hamburger
   mobileMenu.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', closeMobileMenu);
+    link.addEventListener('click', () => closeMobileMenu(false));
   });
 
   // Close on outside tap
@@ -34,15 +54,16 @@ function initNavigation() {
     if (mobileMenu.classList.contains('open') &&
         !mobileMenu.contains(e.target) &&
         !hamburger.contains(e.target)) {
-      closeMobileMenu();
+      closeMobileMenu(false);
     }
   });
 
-  function closeMobileMenu() {
+  function closeMobileMenu(returnFocus = true) {
     mobileMenu.classList.remove('open');
     hamburger.classList.remove('open');
     hamburger.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
+    if (returnFocus) hamburger.focus();
   }
 }
 

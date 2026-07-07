@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B4332"/>
+      <stop offset="100%" stop-color="#2D6A4F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <circle cx="1080" cy="110" r="195" fill="#2D6A4F" opacity="0.45"/>
+  <circle cx="110" cy="550" r="145" fill="#2D6A4F" opacity="0.35"/>
+
+  <!-- Logo -->
+  <g transform="translate(88, 72)">
+    <rect width="64" height="64" rx="14" fill="#52B788"/>
+    <path d="M32 12C23 12 16 20 16 28C16 38 23 44 32 56C41 44 48 38 48 28C48 20 41 12 32 12Z" fill="#D8F3DC"/>
+    <path d="M32 20V56" stroke="white" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M32 34L24 26" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M32 40L40 32" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <text x="168" y="96" font-family="Georgia, serif" font-size="26" fill="#D8F3DC">MyFit<tspan font-style="italic">Wealth</tspan>Journey</text>
+  <text x="168" y="122" font-family="Arial, sans-serif" font-size="15" fill="#52B788" letter-spacing="2">MIND · BODY · MONEY</text>
+
+  <!-- Leaf icon (large) -->
+  <g transform="translate(840, 180) scale(7)">
+    <path d="M21 3C21 3 11 5 7 12C5 16 6 20 6 20C6 20 10 21 14 18C18 16 21 3 21 3Z" fill="#52B788" stroke="#D8F3DC" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M3 21L14 12" stroke="#D8F3DC" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Main headline -->
+  <text x="88" y="305" font-family="Georgia, serif" font-size="72" fill="white" font-weight="700" letter-spacing="-1">Healthy Living,</text>
+  <text x="88" y="388" font-family="Georgia, serif" font-size="72" fill="#52B788" font-weight="700" letter-spacing="-1">Real Budgets</text>
+
+  <!-- Subtext -->
+  <text x="88" y="452" font-family="Arial, sans-serif" font-size="26" fill="#D8F3DC" opacity="0.85">Guides, recipes, and tools for everyday wellness</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="600" width="1200" height="30" fill="#52B788" opacity="0.2"/>
+  <text x="600" y="621" font-family="Arial, sans-serif" font-size="14" fill="#D8F3DC" text-anchor="middle" letter-spacing="1" opacity="0.7">myfitwealthjourney.com</text>
+</svg>

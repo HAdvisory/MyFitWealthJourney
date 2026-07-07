@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B4332"/>
+      <stop offset="100%" stop-color="#2D6A4F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <circle cx="1100" cy="90" r="210" fill="#2D6A4F" opacity="0.45"/>
+  <circle cx="100" cy="560" r="140" fill="#2D6A4F" opacity="0.35"/>
+
+  <!-- Logo -->
+  <g transform="translate(88, 72)">
+    <rect width="64" height="64" rx="14" fill="#52B788"/>
+    <path d="M32 12C23 12 16 20 16 28C16 38 23 44 32 56C41 44 48 38 48 28C48 20 41 12 32 12Z" fill="#D8F3DC"/>
+    <path d="M32 20V56" stroke="white" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M32 34L24 26" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M32 40L40 32" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <text x="168" y="96" font-family="Georgia, serif" font-size="26" fill="#D8F3DC">MyFit<tspan font-style="italic">Wealth</tspan>Journey</text>
+  <text x="168" y="122" font-family="Arial, sans-serif" font-size="15" fill="#52B788" letter-spacing="2">MIND · BODY · MONEY</text>
+
+  <!-- Plate icon (large) -->
+  <g transform="translate(830, 170) scale(7.5)">
+    <circle cx="11" cy="13" r="8" fill="#52B788" stroke="#D8F3DC" stroke-width="1.5"/>
+    <circle cx="11" cy="13" r="3" fill="#D8F3DC"/>
+    <path d="M8 3v4M10 3v4M12 3v4" stroke="#D8F3DC" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M8 7a2 2 0 0 0 4 0" stroke="#D8F3DC" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="19" y1="3" x2="19" y2="21" stroke="#D8F3DC" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Section label -->
+  <rect x="88" y="190" width="170" height="36" rx="18" fill="#52B788" opacity="0.35"/>
+  <text x="173" y="214" font-family="Arial, sans-serif" font-size="15" fill="#D8F3DC" text-anchor="middle" letter-spacing="1.5">BUDGET RECIPES</text>
+
+  <!-- Main headline -->
+  <text x="88" y="310" font-family="Georgia, serif" font-size="70" fill="white" font-weight="700" letter-spacing="-1">Healthy Recipes</text>
+  <text x="88" y="390" font-family="Georgia, serif" font-size="70" fill="#52B788" font-weight="700" letter-spacing="-1">Under $3/Serving</text>
+
+  <!-- Subtext -->
+  <text x="88" y="455" font-family="Arial, sans-serif" font-size="26" fill="#D8F3DC" opacity="0.85">Quick, nutritious meals that fit any grocery budget</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="600" width="1200" height="30" fill="#52B788" opacity="0.2"/>
+  <text x="600" y="621" font-family="Arial, sans-serif" font-size="14" fill="#D8F3DC" text-anchor="middle" letter-spacing="1" opacity="0.7">myfitwealthjourney.com</text>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#1B4332"/>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#grad)"/>
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B4332"/>
+      <stop offset="100%" stop-color="#2D6A4F"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Decorative circles -->
+  <circle cx="1050" cy="120" r="180" fill="#2D6A4F" opacity="0.5"/>
+  <circle cx="150" cy="520" r="130" fill="#2D6A4F" opacity="0.4"/>
+
+  <!-- Logo mark -->
+  <g transform="translate(88, 72)">
+    <rect width="64" height="64" rx="14" fill="#52B788"/>
+    <path d="M32 12C23 12 16 20 16 28C16 38 23 44 32 56C41 44 48 38 48 28C48 20 41 12 32 12Z" fill="#D8F3DC"/>
+    <path d="M32 20V56" stroke="white" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M32 34L24 26" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M32 40L40 32" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Brand name -->
+  <text x="168" y="96" font-family="Georgia, serif" font-size="26" fill="#D8F3DC" font-weight="400" letter-spacing="0.5">MyFit<tspan font-style="italic">Wealth</tspan>Journey</text>
+  <text x="168" y="122" font-family="Arial, sans-serif" font-size="15" fill="#52B788" letter-spacing="2">MIND · BODY · MONEY</text>
+
+  <!-- Calculator icon (large, centered right) -->
+  <g transform="translate(830, 180) scale(7)">
+    <rect x="4" y="2" width="16" height="20" rx="2" fill="#D8F3DC" stroke="#52B788" stroke-width="1.5"/>
+    <rect x="7" y="5" width="10" height="4" rx="1" fill="#52B788"/>
+    <circle cx="8.5" cy="13" r="1" fill="#2D6A4F"/>
+    <circle cx="12" cy="13" r="1" fill="#2D6A4F"/>
+    <circle cx="15.5" cy="13" r="1" fill="#52B788"/>
+    <circle cx="8.5" cy="17" r="1" fill="#2D6A4F"/>
+    <circle cx="12" cy="17" r="1" fill="#2D6A4F"/>
+    <rect x="14.5" y="15.5" width="2" height="3" rx=".5" fill="#52B788"/>
+  </g>
+
+  <!-- Main headline -->
+  <text x="88" y="290" font-family="Georgia, serif" font-size="72" fill="white" font-weight="700" letter-spacing="-1">Free Wellness</text>
+  <text x="88" y="375" font-family="Georgia, serif" font-size="72" fill="#52B788" font-weight="700" letter-spacing="-1">Tools</text>
+
+  <!-- Subtext -->
+  <text x="88" y="440" font-family="Arial, sans-serif" font-size="28" fill="#D8F3DC" opacity="0.9">Grocery Budget · Meal Cost · Protein Cost</text>
+
+  <!-- Pill tags -->
+  <rect x="88" y="490" width="165" height="44" rx="22" fill="#52B788" opacity="0.3"/>
+  <text x="170" y="518" font-family="Arial, sans-serif" font-size="17" fill="#D8F3DC" text-anchor="middle">No login required</text>
+
+  <rect x="270" y="490" width="200" height="44" rx="22" fill="#52B788" opacity="0.3"/>
+  <text x="370" y="518" font-family="Arial, sans-serif" font-size="17" fill="#D8F3DC" text-anchor="middle">100% free forever</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="600" width="1200" height="30" fill="#52B788" opacity="0.2"/>
+  <text x="600" y="621" font-family="Arial, sans-serif" font-size="14" fill="#D8F3DC" text-anchor="middle" letter-spacing="1" opacity="0.7">myfitwealthjourney.com</text>
+</svg>

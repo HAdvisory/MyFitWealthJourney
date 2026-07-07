@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B4332"/>
+      <stop offset="100%" stop-color="#2D6A4F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Decorative shapes -->
+  <circle cx="1100" cy="80" r="220" fill="#2D6A4F" opacity="0.45"/>
+  <circle cx="100" cy="580" r="160" fill="#2D6A4F" opacity="0.35"/>
+  <circle cx="600" cy="650" r="200" fill="#52B788" opacity="0.08"/>
+
+  <!-- Logo mark -->
+  <g transform="translate(88, 72)">
+    <rect width="64" height="64" rx="14" fill="#52B788"/>
+    <path d="M32 12C23 12 16 20 16 28C16 38 23 44 32 56C41 44 48 38 48 28C48 20 41 12 32 12Z" fill="#D8F3DC"/>
+    <path d="M32 20V56" stroke="white" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M32 34L24 26" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M32 40L40 32" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <text x="168" y="96" font-family="Georgia, serif" font-size="26" fill="#D8F3DC" font-weight="400">MyFit<tspan font-style="italic">Wealth</tspan>Journey</text>
+  <text x="168" y="122" font-family="Arial, sans-serif" font-size="15" fill="#52B788" letter-spacing="2">MIND · BODY · MONEY</text>
+
+  <!-- Main headline -->
+  <text x="88" y="280" font-family="Georgia, serif" font-size="68" fill="white" font-weight="700" letter-spacing="-1">Healthy Living on</text>
+  <text x="88" y="360" font-family="Georgia, serif" font-size="68" fill="#52B788" font-weight="700" letter-spacing="-1">a Real Budget</text>
+
+  <!-- Subtext -->
+  <text x="88" y="430" font-family="Arial, sans-serif" font-size="26" fill="#D8F3DC" opacity="0.9">Practical guides · Budget recipes · Free tools</text>
+
+  <!-- Three pillars -->
+  <rect x="88" y="475" width="220" height="80" rx="12" fill="#2D6A4F" opacity="0.6"/>
+  <text x="198" y="508" font-family="Arial, sans-serif" font-size="13" fill="#52B788" text-anchor="middle" letter-spacing="1.5">MIND</text>
+  <text x="198" y="532" font-family="Arial, sans-serif" font-size="17" fill="white" text-anchor="middle">Mental wellness</text>
+
+  <rect x="330" y="475" width="220" height="80" rx="12" fill="#2D6A4F" opacity="0.6"/>
+  <text x="440" y="508" font-family="Arial, sans-serif" font-size="13" fill="#52B788" text-anchor="middle" letter-spacing="1.5">BODY</text>
+  <text x="440" y="532" font-family="Arial, sans-serif" font-size="17" fill="white" text-anchor="middle">Fitness &amp; nutrition</text>
+
+  <rect x="572" y="475" width="220" height="80" rx="12" fill="#2D6A4F" opacity="0.6"/>
+  <text x="682" y="508" font-family="Arial, sans-serif" font-size="13" fill="#52B788" text-anchor="middle" letter-spacing="1.5">MONEY</text>
+  <text x="682" y="532" font-family="Arial, sans-serif" font-size="17" fill="white" text-anchor="middle">Budget strategies</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="600" width="1200" height="30" fill="#52B788" opacity="0.2"/>
+  <text x="600" y="621" font-family="Arial, sans-serif" font-size="14" fill="#D8F3DC" text-anchor="middle" letter-spacing="1" opacity="0.7">myfitwealthjourney.com</text>
+</svg>
