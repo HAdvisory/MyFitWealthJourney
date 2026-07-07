@@ -2126,3 +2126,251 @@ select.form-control {
   color: #78350F;
 }
 
+/* ============================================
+   HOMEPAGE EDITORIAL — Visual Hierarchy Sprint
+   Improves hierarchy, desktop layout, rhythm,
+   and card metadata without redesigning the site.
+   ============================================ */
+
+/* Hero: subtle tinted gradient separates it from surrounding white sections.
+   Fixes the invisible-text bug (previous white bg + white inline color = nothing visible). */
+.pub-hero {
+  background: linear-gradient(155deg, #EEF7F1 0%, #F7FAF8 45%, #FFF8F0 100%);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--space-12) 0 var(--space-16);
+  position: relative;
+}
+
+/* Two-column editorial hero — text left, content panel right */
+.pub-hero-layout {
+  display: grid;
+  gap: var(--space-10);
+  align-items: start;
+}
+@media (min-width: 1024px) {
+  .pub-hero-layout {
+    grid-template-columns: 1fr 320px;
+    gap: var(--space-12);
+    align-items: center;
+  }
+}
+
+/* Publication stat bar under hero text */
+.pub-stat-bar {
+  display: flex;
+  gap: var(--space-8);
+  flex-wrap: wrap;
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-border);
+  margin-top: var(--space-6);
+}
+.pub-stat-value {
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  color: var(--color-primary-dark);
+  line-height: 1;
+  display: block;
+}
+.pub-stat-label {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  display: block;
+  margin-top: 3px;
+}
+
+/* Hero right panel — "what you'll find here" content summary */
+.pub-hero-panel {
+  background: rgba(255,255,255,0.75);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+.pub-hero-panel-header {
+  background: var(--color-primary-dark);
+  padding: var(--space-4) var(--space-5);
+}
+.pub-hero-panel-title {
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,.7);
+  margin: 0;
+}
+.pub-hero-panel-body {
+  display: flex;
+  flex-direction: column;
+}
+.pub-hero-panel-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  border-bottom: 1px solid var(--color-border);
+  text-decoration: none;
+  color: inherit;
+  transition: background var(--transition);
+}
+.pub-hero-panel-item:last-child { border-bottom: none; }
+.pub-hero-panel-item:hover { background: var(--color-light-green); }
+.pub-hero-panel-item:hover .pub-hero-panel-item-desc { color: var(--color-text); }
+.pub-hero-panel-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  background: var(--color-light-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.pub-hero-panel-item:hover .pub-hero-panel-icon { background: rgba(45,106,79,.15); }
+.pub-hero-panel-item-title {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  display: block;
+  margin-bottom: 2px;
+}
+.pub-hero-panel-item-desc {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* Editorial context — replaces the inline rationale box */
+.editorial-context {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  font-style: italic;
+  line-height: 1.7;
+  padding: var(--space-4) var(--space-5);
+  border-left: 3px solid var(--color-primary-light);
+  margin-bottom: var(--space-5);
+  background: var(--color-bg);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+.editorial-context strong {
+  font-style: normal;
+  color: var(--color-text);
+}
+
+/* Quick-take label: "Best for: …" on recipe and article cards */
+.quick-take {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  background: var(--color-light-green);
+  padding: 3px var(--space-3);
+  border-radius: var(--radius-sm);
+  margin-top: var(--space-2);
+}
+
+/* Smart Habit — two-column layout for desktop */
+.habit-layout {
+  display: grid;
+  gap: var(--space-8);
+  align-items: start;
+}
+@media (min-width: 1024px) {
+  .habit-layout {
+    grid-template-columns: 1fr 240px;
+    gap: var(--space-10);
+  }
+}
+.habit-stats-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+.habit-stat-card {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4) var(--space-5);
+}
+.habit-stat-value {
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  color: var(--color-primary-dark);
+  line-height: 1;
+  display: block;
+}
+.habit-stat-label {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  display: block;
+  margin-top: 3px;
+}
+
+/* Editor's Picks — structured pick items with hierarchy */
+.pick-item {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: var(--space-5);
+  padding: var(--space-6) 0;
+  border-bottom: 1px solid var(--color-border);
+  align-items: start;
+}
+.pick-item:last-child { border-bottom: none; }
+.pick-icon {
+  width: 52px;
+  height: 52px;
+  background: var(--color-light-green);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  transition: transform var(--transition);
+}
+.pick-item:hover .pick-icon { transform: scale(1.06); }
+.pick-item--top .pick-icon {
+  background: var(--color-primary-dark);
+}
+.pick-number {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: var(--space-2);
+}
+.pick-item--top .pick-number { color: var(--color-primary); }
+.pick-updated {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  margin-top: var(--space-3);
+}
+
+/* Category hub — more breathing room on large screens */
+@media (min-width: 1024px) {
+  .category-hub-card { padding: var(--space-6) var(--space-4); }
+}
+
+/* Philosophy strip internal dividers on desktop */
+@media (min-width: 640px) {
+  .philosophy-pillar + .philosophy-pillar {
+    border-left: 1px solid rgba(255,255,255,0.12);
+    padding-left: var(--space-6);
+  }
+}
+/* Larger spacing variant on pub-sections that follow a dark strip */
+.pub-section--after-dark {
+  padding-top: var(--space-16);
+}
+
+/* mt-6 utility */
+.mt-6 { margin-top: var(--space-6); }
